@@ -4,6 +4,7 @@ import { clsx } from 'clsx';
 interface SkeletonProps {
   className?: string;
   variant?: 'text' | 'rect' | 'circle';
+  style?: React.CSSProperties;
 }
 
 export const Skeleton: React.FC<SkeletonProps> = ({ className, variant = 'rect' }) => {
